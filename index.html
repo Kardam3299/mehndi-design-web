@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarush Bridal Mehandi Artist | DLF Galleria, Gurugram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6b1426;
+      --accent: #c69234;
+      --bg: #fcf9f6;
+      --text: #222222;
+      --light-text: #666666;
+    }
+    
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+      font-family: 'Plus Jakarta Sans', sans-serif; 
+    }
+    
+    body { 
+      background-color: var(--bg); 
+      color: var(--text); 
+      line-height: 1.6; 
+      overflow-x: hidden;
+    }
+    
+    header { 
+      background: #ffffff; 
+      padding: 1rem 6%; 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      border-bottom: 1px solid #f0e6e6; 
+      position: sticky; 
+      top: 0; 
+      z-index: 100; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    
+    .brand { 
+      font-family: 'Playfair Display', serif; 
+      font-size: 1.5rem; 
+      font-weight: 700; 
+      color: var(--primary); 
+    }
+
+    .brand span {
+      font-size: 0.82rem;
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    .call-btn { 
+      background: var(--primary); 
+      color: #fff; 
+      padding: 8px 18px; 
+      border-radius: 6px; 
+      text-decoration: none; 
+      font-size: 0.9rem; 
+      font-weight: 600;
+    }
+
+    /* Hero Section */
+    .hero { 
+      padding: 4rem 6%; 
+      display: flex;
+      align-items: center;
+      gap: 3.5rem;
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+    
+    .hero-content {
+      flex: 1.1;
+    }
+    
+    .badge { 
+      display: inline-block; 
+      background: #faede8; 
+      color: var(--primary); 
+      padding: 6px 14px; 
+      border-radius: 50px; 
+      font-size: 0.82rem; 
+      font-weight: 600; 
+      margin-bottom: 1.2rem; 
+      border: 1px solid #f2d7cf;
+    }
+    
+    .hero h1 { 
+      font-family: 'Playfair Display', serif; 
+      font-size: 3rem; 
+      color: var(--primary); 
+      margin-bottom: 1rem; 
+      line-height: 1.2;
+    }
+    
+    .hero p { 
+      margin-bottom: 2rem; 
+      color: var(--light-text); 
+      font-size: 1.05rem;
+    }
+
+    .hero-btn { 
+      background: var(--primary); 
+      color: #fff; 
+      padding: 13px 26px; 
+      border-radius: 6px; 
+      text-decoration: none; 
+      font-weight: 600; 
+      font-size: 1rem;
+      box-shadow: 0 4px 14px rgba(107,20,38,0.25);
+    }
+    
+    .hero-images {
+      flex: 0.9;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+    
+    .hero-img-box {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      background: #fff;
+    }
+
+    .hero-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .hero-img-box:hover img {
+      transform: scale(1.05);
+    }
+    
+    .hero-img-box.tall {
+      height: 380px;
+    }
+    
+    .hero-img-box.offset {
+      height: 320px;
+      margin-top: 2.5rem;
+    }
+
+    /* Gallery Section */
+    .section { 
+      padding: 4.5rem 6%; 
+      max-width: 1250px; 
+      margin: auto; 
+    }
+    
+    .section-head {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 3rem auto;
+    }
+
+    .section-title { 
+      font-family: 'Playfair Display', serif; 
+      font-size: 2.4rem; 
+      color: var(--primary); 
+      margin-bottom: 0.5rem;
+    }
+
+    .section-head p {
+      color: var(--light-text);
+      font-size: 0.95rem;
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .gallery-card {
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+      border: 1px solid #f0e6e6;
+    }
+    
+    .gallery-card .img-wrap {
+      width: 100%;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-info {
+      padding: 1rem 1.2rem;
+    }
+
+    .gallery-info h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .gallery-info span {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Services Grid */
+    .services-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+      gap: 1.5rem; 
+    }
+    
+    .card { 
+      background: #fff; 
+      border: 1px solid #eee; 
+      border-radius: 10px; 
+      padding: 2rem 1.5rem; 
+      text-align: left; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+      border-top: 4px solid var(--primary);
+    }
+    
+    .card h3 { 
+      font-size: 1.25rem; 
+      font-family: 'Playfair Display', serif; 
+      margin-bottom: 0.75rem; 
+      color: var(--primary);
+    }
+    
+    .card p {
+      color: var(--light-text);
+      font-size: 0.92rem;
+    }
+
+    .info-bar { 
+      background: #fff; 
+      border: 1px solid #f0e6e6; 
+      border-radius: 12px; 
+      padding: 2.5rem 1.5rem; 
+      text-align: center; 
+      margin-top: 3.5rem; 
+      box-shadow: 0 6px 20px rgba(0,0,0,0.02);
+    }
+    
+    .info-bar h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-bottom: 0.6rem;
+      color: var(--primary);
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 22px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      padding: 2.5rem 6%;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 850px) {
+      .hero { flex-direction: column; text-align: center; gap: 2.5rem; padding: 3rem 1.5rem; }
+      .hero h1 { font-size: 2.3rem; }
+      .hero-images { width: 100%; }
+      .hero-img-box.tall, .hero-img-box.offset { height: 260px; margin-top: 0; }
+      .section-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="brand">
+      Aarush Mehandi
+      <span>Galleria Market, DLF 4</span>
+    </div>
+    <a href="tel:+919266343725" class="call-btn">📞 Call Studio</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="badge">⭐ 5.0 Star Rated (90+ Reviews)</div>
+      <h1>Exquisite Bridal Henna Crafted for Your Big Day</h1>
+      <p>15+ years adorning brides with bespoke Rajasthani, Marwadi, and royal heritage bridal mehndi designs right from DLF Galleria, Gurugram.</p>
+      
+      <div>
+        <a href="https://wa.me/919266343725?text=Hi%20Aarush%20Ji,%20I%20want%20to%20check%20availability%20for%20a%20Bridal%20Mehndi%20booking." class="hero-btn">
+          Inquire Wedding Dates
+        </a>
+      </div>
+    </div>
+    
+    <div class="hero-images">
+      <div class="hero-img-box tall">
+        <img src="images/mehndi-1.jpg" alt="Custom Bridal Portrait Henna">
+      </div>
+      <div class="hero-img-box offset">
+        <img src="images/mehndi-4.jpg" alt="Royal Rajasthani Heritage Mehndi">
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Gallery Section -->
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">Design Portfolio</h2>
+      <p>Browse authentic handcrafted patterns from our signature bridal collection.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <div class="img-wrap">
+          <img src="images/mehndi-1.jpg" alt="Bridal Portrait Mehndi">
+        </div>
+        <div class="gallery-info">
+          <h4>Dulha-Dulhan Portraits</h4>
+          <span>Custom Bridal Figures</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap">
+          <img src="images/mehndi-2.jpg" alt="Monogram & Peacock Motifs">
+        </div>
+        <div class="gallery-info">
+          <h4>Royal Monogram & Mayur</h4>
+          <span>Custom Initials & Jali Work</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap">
+          <img src="images/mehndi-3.jpg" alt="Lotus Canopy Design">
+        </div>
+        <div class="gallery-info">
+          <h4>Padma & Elephant Bands</h4>
+          <span>Traditional Lotus Bands</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap">
+          <img src="images/mehndi-4.jpg" alt="Heritage Palace Henna">
+        </div>
+        <div class="gallery-info">
+          <h4>Jharokha Heritage Set</h4>
+          <span>Architectural Palace Motifs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" style="padding-top: 0;">
+    <div class="section-head">
+      <h2 class="section-title">Packages & Services</h2>
+      <p>Customized henna art tailored for weddings, sangeet, and festive celebrations.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="card">
+        <h3>Royal Bridal Package</h3>
+        <p>Full arms and feet coverage, personalized portrait figures, elephant bands, and deep dark-stain guarantee.</p>
+      </div>
+      <div class="card">
+        <h3>Rajasthani & Marwadi</h3>
+        <p>Dense, high-detail cultural patterns highlighting authentic heritage jharokha lines and jali craftsmanship.</p>
+      </div>
+      <div class="card">
+        <h3>Modern Monogram Styles</h3>
+        <p>Personalized initials, elegant negative spaces, and sleek floral trail patterns favored for roka and engagement.</p>
+      </div>
+      <div class="card">
+        <h3>Sangeet Family Packages</h3>
+        <p>Dedicated team of experienced mehndi artists available at your wedding venue for family and wedding guests.</p>
+      </div>
+    </div>
+
+    <div class="info-bar">
+      <h3>Visit Studio in Galleria</h3>
+      <p>Shop No. 105 SG, Galleria Market, Sector 28, DLF Phase IV, Gurugram, Haryana 122009</p>
+      <p style="margin-top: 10px; font-weight: 600; color: var(--primary);">Studio Hours: 10:00 AM – 9:30 PM (Daily)</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Aarush Bridal Mehandi Artist. Galleria Market, DLF Phase IV, Gurugram.</p>
+  </footer>
+
+  <!-- WhatsApp Booking Button -->
+  <a href="https://wa.me/919266343725?text=Hi%20Aarush%20Ji,%20I%20saw%20your%20designs%20and%20want%20to%20book%20an%20appointment." target="_blank" class="whatsapp-btn">
+    💬 Book on WhatsApp
+  </a>
+
+</body>
+</html>
